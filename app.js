@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 // Verify Webhook - for Facebook to verify your webhook
 app.get('/webhook', (req, res) => {
-  let VERIFY_TOKEN = 'YOUR_VERIFY_TOKEN';
+  let VERIFY_TOKEN = 'EAAKC90PqJWABO6uGirkANaOh2npx1oe8sKiw86W3f0biXoqCg0aFjl9d75nGMnt89nWzcQ39dSEMXJP5LJ9iayeVTGX2tlbLNnZAA8ZBAby4OGaEMOSdU6ZCguHUgKTwcLUe9RnJxYgh8gyhvjhxIGbhznMmyYbSx3r11hNoqNZALD7fDZAGduZCpwJGIdyBrSpQPEoRAKATusaf4ZA5QZDZD';
 
   // Parse params from the webhook verification request
   let mode = req.query['hub.mode'];
